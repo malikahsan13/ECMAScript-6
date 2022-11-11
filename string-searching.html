@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Searching Strings</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        const planet = "Earth";
+        console.log(planet.startsWith("Ear")); // True
+        console.log(planet.startsWith("ear")); // False case sensitive
+        console.log(planet.includes("h")); // True
+        console.log(planet.includes("Earth1")); //False something is not matching
+        console.log(planet.search("art")); // return 1 where a is starting
+    </script>
+</body>
+</html>
