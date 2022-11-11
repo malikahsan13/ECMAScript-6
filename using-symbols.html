@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Using Symbols</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        const id = Symbol(); // factory used for creating symbol doesn't conflict with object key if used with same name
+
+        var courseInfo = {
+            title: "Javascript",
+            topics: ["Strings","arrays","objects"]
+        };
+        courseInfo[id] = 456894;
+        console.log(courseInfo);
+
+        var courseInfo1 = {
+            title: "PHP",
+            topics: ["Strings","arrays","objects"],
+            id: 4577
+        };
+        courseInfo[id] = 456894;
+        console.log(courseInfo1);
+
+    </script>
+</body>
+</html>
