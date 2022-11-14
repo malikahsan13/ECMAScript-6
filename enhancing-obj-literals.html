@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Enhcnaing Object Literals</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        function skier(name,sound){
+            return{
+                //reason is EMCA 6 allows you to directly use properties using object literals enhanement
+                name, //replaced from name: name
+                sound, //replaced from sound: sound
+                powderYell: function(){
+                    let yell = this.sound.toUpperCase();
+                    console.log(`${yell}! ${yell}!`);
+                }
+            }
+        }
+
+        skier("Jhon","Woo").powderYell();
+    </script>
+</body>
+</html>
