@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Object Destructuring</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        const vecation = {
+            destination: "Chille",
+            travelers: 2,
+            activity: "skiing",
+            cost: "so much"
+        }
+
+        function marketing({destination , activity}){
+            return `come to ${destination} and do some ${activity}`;
+        }
+
+        console.log(marketing(vecation));
+
+        const {title, price} = {
+            title: "Reuben",
+            price: 7,
+            ingredients: [
+                "bread",
+                "corned beed",
+                "dressing",
+                "sauerkraut",
+                "cheese"
+            ]
+        }
+
+        console.log(title);
+        console.log(price);
+    </script>
+</body>
+</html>
