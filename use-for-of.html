@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Using for/of</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        for(let letter of "Javascript"){
+            console.log(letter);
+        }
+
+        let topics = new Map();
+        topics.set("Html","/topics/html");
+        topics.set("CSS","/topics/css");
+        topics.set("JavaScript","/topics/javascript")
+
+        console.log("Using Simple topic");
+        for(let topic of topics){
+            console.log(topic);
+        }
+
+        console.log("Using topics keys");
+        for(let topic of topics.keys()){
+            console.log(topic);
+        }
+
+        console.log("Using topics values");
+        for(let topic of topics.values()){
+            console.log(topic);
+        }
+
+        console.log("Using topics entries");
+        for(let topic of topics.entries()){
+            console.log(topic);
+        }
+
+    </script>
+</body>
+</html>
