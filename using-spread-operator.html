@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Using Spread Operator</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        let cats = ["Bicuit", "Jungle"];
+        let dogs = ["Olib","spike"];
+        let animals = ["bull",cats,dogs]; // this will add array not array values
+        console.log(animals);
+        let animals_arr = ["bull",...cats,...dogs]; // add elements of array in animals array
+        console.log(animals_arr);
+    </script>
+</body>
+</html>
