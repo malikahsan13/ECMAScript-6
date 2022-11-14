@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Using Map</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        let course = new Map();
+
+        course.set("react", {description : "ui"});
+        course.set("jest", {description: "testing"});
+
+        console.log(course.get("react"));
+
+        let details = new Map([
+            [new Date() , "today"],
+            [2 , {javascript: ["js","node","react"]}],
+            ["items" , [1,2]]
+        ]);
+
+        details.forEach(function(item){
+            console.log(item);
+        });
+    </script>
+</body>
+</html>

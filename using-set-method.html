@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Using Set</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        var books = new Set();
+        books.add("Book 1");
+        books.add("Book 2").add("Book 3");
+        books.add("Book 1");  // it will add only one entry does not duplicate
+
+        books.delete("Book 3");
+
+        console.log("Books in set ",books);
+        books.forEach(function(book){
+            console.log(book);
+        });
+
+    </script>
+</body>
+</html>
