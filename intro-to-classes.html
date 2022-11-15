@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Intro to Classes</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        class Vehicle{
+            constructor(description,wheels){
+                this.description = description;
+                this.wheels = wheels;
+            }
+            describeYourSelf(){
+                console.log(`I am ${this.description} and I have ${this.wheels} wheels!`);
+            }
+        }
+
+        let coolSkiVan = new Vehicle("Skivan",4);
+        coolSkiVan.describeYourSelf();
+
+    </script>
+</body>
+</html>
