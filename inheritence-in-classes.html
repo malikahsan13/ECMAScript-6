@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Inheritence in Classes</title>
+</head>
+<body>
+    <h3>
+        ECMA Script 6
+    </h3> 
+    <p>Press F12 and see the magic !</p>
+    <script type="text/javascript">
+        class Vehicle{
+            constructor(description,wheels){
+                this.description = description;
+                this.wheels = wheels;
+            }
+            describeYourSelf(){
+                console.log(`I am ${this.description} and I have ${this.wheels} wheels !`);
+            }
+        }
+
+
+        class SemiTruck extends Vehicle{
+            constructor(){
+                super("SemiTruck",6);
+            }
+        }
+
+        let semiTruck = new SemiTruck();
+        semiTruck.describeYourSelf();
+
+    </script>
+</body>
+</html>
